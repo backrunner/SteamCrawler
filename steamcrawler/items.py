@@ -54,3 +54,20 @@ class SteamGameItem(scrapy.Item):
     simpleChineseUI = scrapy.Field()
     simpleChineseAudio = scrapy.Field()
     simpleChineseSubtitle = scrapy.Field()
+
+class SaleRankItem(scrapy.Item):
+    # 基本信息
+    itemKey = scrapy.Field()
+    name = scrapy.Field()
+    releaseDate = scrapy.Field()
+    # 支持平台
+    supportWin = scrapy.Field()
+    supportMac = scrapy.Field()
+    supportLinux = scrapy.Field()
+    # 价格信息
+    originalPrice = scrapy.Field()
+    nowPrice = scrapy.Field()
+    discount = scrapy.Field()
+    # 评价信息
+    reviewCount = scrapy.Field()
+    goodReviewRate = scrapy.Field()
